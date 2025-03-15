@@ -1,38 +1,129 @@
-.App {
+body {
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 400px;
+  margin: 50px auto;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+h4 {
+  display: flex;
+  justify-content: left;
+}
+
+.input-group {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+input {
+  width: 70%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 15px;
+  font-size: 16px;
+  color: white;
+  background: #ff8c00;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+  background: #e07b00;
+}
+
+.error {
+  color: #ffcccb;
+  margin-top: 10px;
+}
+
+.weather-card {
+  margin-top: 20px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 15px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.weather-card h3 {
+  font-size: 22px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.weather-card img {
+  width: 100px;
+  height: 100px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.temperature {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.description {
+  font-size: 18px;
+  font-style: italic;
+  margin: 5px 0;
+}
+
+.extra-info {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+
+.extra-info p {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 2rem;
+}
+
+.weather-info {
+  display: flex;
+  align-items: center; 
+  gap: 10px; 
+  justify-content: center;
+}
+
+.weather-info img {
+  width: 50px; 
+  height: 50px;
+}
+
+.temperature {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.description {
+  font-size: 1.2rem;
+  text-transform: capitalize; 
 }
